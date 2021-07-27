@@ -1,5 +1,4 @@
-% Embedding torus into S1 or disk?
-% Please refer to A. Singer, H.-T. Wu (2011)
+% Embedding torus into S1 or disc?
 clc; clear; close all;
 n = 1000;
 RevoR = 3;
