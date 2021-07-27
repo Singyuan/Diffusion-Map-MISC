@@ -1,5 +1,17 @@
 # Diffusion-Map-MISC
 
+<!-- TABLE OF CONTENTS -->
+<details open="open">
+  <summary>Table of Contents</summary>
+  <ol>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#data">Data</a></li>
+    <li><a href="#quick-start-demo">Quick Start (Demo)</a></li>
+    <li><a href="#functions">Functions</a></li>
+    <li><a href="#references">References</a></li>
+  </ol>
+</details>
+
 ## Introduction
 This repo is a note about diffusion map from the 2021 spring class "Mathematical Foundation toward Artificial Intelligence in Medicine" by Prof. Hau-Tieng Wu in NTU. Here are miscellaneous applications of diffusion map and their references.
 
@@ -50,7 +62,8 @@ These are miscellaneous applications of diffusion map. In the folder `src`, ther
 
 
 
-## References (random arrangement)
+## References 
+_Random Arrangement_
 1. J. de la Porte, B. M. Herbst, W. Hereman and S. J. van der Walt, _An introduction to diffusion maps_, **(2008)**.
 2. J. Wang, _Geometric Structure of High-Dimensional Data and Dimensionality Reduction_.
 3. L. Zelnik-Manor and P. Perona, _Self-Tuning Spectral Clustering_, **(2005)**.
