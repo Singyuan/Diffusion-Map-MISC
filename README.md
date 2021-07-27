@@ -13,7 +13,7 @@ In the folder `data`, there are three data: `UniSphere.mat`, `irismat.mat` and `
 > This is generated from McSharry PE, Clifford GD, Tarassenko L, Smith L. (2003), ( https://physionet.org/content/ecgsyn/1.0.0/#files ).
 
 ## Quick Start (Demo)
-Introduce to how to use the miscellaneous function in the folder `src` by the main function in folder `exp`. Please visit the folder `exp` first.
+Introduce to how to use the miscellaneous function in the folder `src` by the main functions in folder `exp`. Please visit the folder `exp` first and the following main functions can be tried.
 1. Experiment `ExpMain.m`: Try to apply various diffusion map on circle (S1) data. Because we could calculate analytic solution of the eigenfunction, we could confirm the various diffusion map.
 > For convergence, please refer to Coifman & Lafon, **(2006)**, [8] and Singer, **(2006)**, [9].
 
