@@ -36,8 +36,8 @@ if ~isempty(isoidx)
     disp('(warning) There are isolated points.')
     for i = 1:numel(isoidx)
         [tempidx, tempdist] = knnsearch(X, X(isoidx(i), :), 'k', 4);
-        idx(isoidx, 1:3) =  tempidx(2:4); % no self-loop
-        dista(isoidx, 1:3) =  tempdist(2:4);
+        idx(isoidx(i), 1:3) =  tempidx(2:4); % no self-loop
+        dista(isoidx(i), 1:3) =  tempdist(2:4);
     end
 else
     disp('(info) There are no isolated point.')

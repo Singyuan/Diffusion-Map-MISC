@@ -1,13 +1,13 @@
-% Recover torus into S1 or disc (band)?
+% Recover torus into S1 or disc?
 clc; clear; close all;
 addpath('../src', '../data')
 n = 1000;
 % If increases kernel bandwidth and decreases the tube radius?
 % If decreases kernel bandwidth and increases the tube radius?
-% Note that make sure it still a torus!!
+% Note that make sure it still a 
 RevoR = 3; % revolution radius
-TubeR = 1.2; % tube radius
-Bandwidth = 0.7; % kernel bandwidth
+TubeR = 2; % tube radius
+Bandwidth = 1.2; % kernel bandwidth
 
 theta = (rand(n, 1)-0.5)*2*pi;
 phi = (rand(n, 1)-0.5)*2*pi;
@@ -19,7 +19,7 @@ X(:, 3) = TubeR*sin(phi);
 X = X(idx, :);
 
 % Here the bandwidth is given
-[U, S] = DMapBasic(X, 100, 4, Bandwidth);
+[U, S] = DMapBasic(X, 100, 4, 1.2);
 
 figure
 numofpts = size(U, 1);
