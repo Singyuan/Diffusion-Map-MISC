@@ -27,38 +27,38 @@ In the folder `data`, there are three data: `UniSphere.mat`, `irismat.mat` and `
 ## Quick Start (Demo)
 Introduce to how to use the miscellaneous function in the folder `src` by the main functions in folder `exp`. Please visit the folder `exp` first and the following main functions can be tried.
 1. Experiment `ExpMain.m`: Try to apply various diffusion map on circle (S1) data. Because we could calculate analytic solution of the eigenfunction, we could confirm the various diffusion map.
-> For convergence, please refer to Coifman & Lafon, **(2006)**, [8] and Singer, **(2006)**, [9].
+> For convergence, please refer to [Coifman & Lafon, (2006), [8]](https://www.sciencedirect.com/science/article/pii/S1063520306000546) and [Singer, (2006), [9]](https://www.sciencedirect.com/science/article/pii/S1063520306000510).
 
 2. Visualization `ECGMain.m`, `ClassificationMain.m`: This is try to visualize the data through the lower dimension.
 
 3. Bandwidth `TorusMain.m`: Find the relation of "bandwidth" and "revolution radius and tube radius of torus". Try to recover torus into S^1 and disc by tune the parameters mentioned above.
 
 4. Diffusion distance `DDistanceMain.mat`: It shows the diffusion distance at t=1 on sphere. The diffusion distance can approximate geodesic distance locally.
-> Please refer to Singer & Wu, **(2011)**, [10].
+> Please refer to [Singer & Wu, (2011), [10]](https://arxiv.org/abs/1102.0075).
 
 5. Dynamical diffusion map `DDmapMain.m`: It shows the first eigenvector flow is similar to trend of ECG data.
-> Please refer to Lin _et al._, **(2021)**, [11].
+> Please refer to [Lin _et al._, (2021), [11]](https://arxiv.org/abs/1907.00502).
 
 ## Functions
 These are miscellaneous applications of diffusion map. In the folder `src`, there are four types of advaced diffusion map as follows.
 1. **Basic diffusion map** `DMapBasic.m`: The kernel bandwidth could be given and the probability density function could be normalized. Note that it will show that the median number of data in the kernel bandwidth to tune a better bandwidth.
-> Please refer to Porte _et al._, **(2008)**, [1].
+> Please refer to [Porte _et al._, (2008), [1]](https://inside.mines.edu/~whereman/papers/delaPorte-Herbst-Hereman-vanderWalt-PRASA-2008.pdf).
 
 2. **Diffusion map via self-tune kernel bandwidth** `DMapSelftune.m`: The kernel bandwidth would be determined by its neighborhood.
-> Please refer to Chapter 14 in Wang, [2] and Zelnik-Manor & Perona, **(2005)**, [3].
+> Please refer to Chapter 14 in Wang, [2] and [Zelnik-Manor & Perona, (2005), [3]](https://proceedings.neurips.cc/paper/2004/file/40173ea48d9567f1f393b20c855bb40b-Paper.pdf).
 
 3. **Reduced diffusion map via Roseland** `DMapRoseland.m`: Use Roseland method to accelerate diffusion map. Note that it will show that the median number of "reference" data in the kernel bandwidth to tune a better bandwidth.
-> Please refer to Shen and Wu, **(2019)**, [4].<br>
+> Please refer to [Shen and Wu, (2019), [4]](https://proceedings.neurips.cc/paper/2004/file/40173ea48d9567f1f393b20c855bb40b-Paper.pdf).<br>
 > Note that this function include the function `LazyKmeans.m`, which is modified from Kai (2021), Improved Nystrom Kernel Low-rank  Approximation ( https://www.mathworks.com/matlabcentral/fileexchange/38422-improved-nystrom-kernel-low-rank-approximation ), MATLAB Central File.
 
 4. **Diffusion map via Mahalanobis distance** `DMapMD.m`: Construct affinity matrix by Mahalanobis distance instead of Euclidean distance.
-> Please refer to Malik, Shen, Wu & Wu, **(2018)**, [5].
+> Please refer to [Malik, Shen, Wu & Wu, (2018), [5]](https://arxiv.org/abs/1804.02811).
 
 5. **Orientability diffusion map**: TBA.
-> Please refer to Singer & Wu, **(2011)**, [6].
+> Please refer to [Singer & Wu, (2011), [6]](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3134361/).
 
 6. **Alternating diffusion map**: TBA.
-> Please refer to Lederman _et al._, **(2015)**, [7].
+> Please refer to [Lederman _et al._, (2015), [7]](https://ronentalmon.com/wp-content/uploads/2019/03/ICASSP_2015.pdf).
 
 
 
